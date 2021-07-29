@@ -1,4 +1,4 @@
-# WeeWX
+# WeeWX: Aplicativo para recolección de datos.
 
 WeeWX is a free, open source, software program, written in Python, which interacts with your weather station to produce graphs, reports, and HTML pages.
 https://weewx.com/
@@ -15,6 +15,10 @@ sudo apt-get install weewx
 ```
 
 Una vez instalado desplegará una interfaz de consola para añadir la estación.
+
+## Información acerca de configuración de la estación (Vantage PRO2)
+
+[weewx.conf](/weewx.conf)
 
 ### Información adicional
 
