@@ -1,6 +1,4 @@
-# Aplicativo para recolección de datos
-
-## WeeWX
+# WeeWX
 
 WeeWX is a free, open source, software program, written in Python, which interacts with your weather station to produce graphs, reports, and HTML pages.
 https://weewx.com/
