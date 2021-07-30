@@ -2,10 +2,12 @@
 
 Estaciones meteorológicas con enlace de radio + almacenamiento en base de datos + plataforma web de visualización de datos históricos.
 
-- [Modelo Vantage](#vangage-pro2)
-- [Red Estaciones Propias](#red-de-estaciones-meteorológicas-lora)
+Se presentan dos modelos de estación:
 
-## Vangage PRO2
+- [Modelo Vantage](#vantage-pro2)
+- [:sparkles: Red de estaciones propias :sparkles:](#red-de-estaciones-meteorológicas-lora)
+
+## Vantage PRO2
 
 Estación meteorológica de [**Davis Instruments**](https://www.davisinstruments.com/), empresa líder mundial en el desarrollo y fabricación de sistemas, sensores y equipos para la monitorización meteorológica. 
 
