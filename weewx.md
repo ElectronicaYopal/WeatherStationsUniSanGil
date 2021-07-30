@@ -14,11 +14,75 @@ sudo apt-get update
 sudo apt-get install weewx
 ```
 
-Una vez instalado desplegará una interfaz de consola para añadir la estación.
+Una vez instalado desplegará una interfaz de consola para añadir la estación, se piden algunos parámetros estos van de acuerdo a la estación.
 
-## Información acerca de configuración de la estación (Vantage PRO2)
+## Añadir configuración para guardar datos en base de datos.
 
-[weewx.conf](/weewx.conf)
+Antes de realizar esta configuración es pertinente instalar y configurar MariaDB. [Info Aquí](/MariaDB.md)
+
+- Instalar las librerías de cliente para sistemas Debian:
+```bash
+sudo apt install mysql-client
+sudo apt install python3-mysqldb
+```
+- Modificar el archivo de configuración de la estación.
+```bash
+sudo nano -l /etc/weewx/weewx.conf
+```
+Al ejecutar el comando se despliega un archivo grande con un encabezado como el siguiente:
+```bash
+  GNU nano 4.8                                                   /etc/weewx/weewx.conf
+  1 # WEEWX CONFIGURATION FILE
+  2 #
+  3 # Copyright (c) 2009-2021 Tom Keffer <tkeffer@gmail.com>
+  4 # See the file LICENSE.txt for your rights.
+...
+```
+En la sección **[DataBindings]**, aproximadamente en la línea #587, buscar **[[wx_binding]]** y dentro de esa sección cambiar a esto:
+```bash
+...
+589     [[wx_binding]]
+590         # The database must match one of the sections in [Databases].
+591         # This is likely to be the only option you would want to change.
+592         database = archive_mysql
+593         # The name of the table within the database
+594         table_name = archive
+595         # The manager handles aggregation of data for historical summaries
+596         manager = weewx.manager.DaySummaryManager
+597         # The schema defines the structure of the database.
+598         # It is *only* used when the database is created.
+599         schema = schemas.wview_extended.schema
+...
+```
+Más abajo en **[DatabaseTypes]** , aprox línea #621, buscar **[[MySQL]]**, en esa sección los datos debe quedar de la siguiente manera:
+```bash
+...
+630     [[MySQL]]
+631         driver = weedb.mysql
+632         # The host where the database is located
+633         host = localhost
+634         # The user name for logging in to the host
+635         user = weewx
+636         # The password for the user name (quotes guard against parsing errors)
+637         password = weewx
+...
+```
+- Guardar los cambios y salir.
+
+Para guardar los cambios presionar [Ctrl]+[O] y [Enter].
+Para salir [Ctrl]+[X].
+
+- Información acerca de configuración de la estación (Vantage PRO2)
+
+Una vez configurada la estación añadida la configuración debe quedar de la siguiente manera:
+
+[Ver archvio de configuración: weewx.conf](/weewx.conf)
+
+Para ver su configuración ejecuta el siguiente comando:
+
+```bash
+cat -n /etc/weewx/weewx.conf
+```
 
 ### Información adicional
 
