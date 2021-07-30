@@ -2,6 +2,9 @@
 
 Estaciones meteorológicas con enlace de radio + almacenamiento en base de datos + plataforma web de visualización de datos históricos.
 
+- [Modelo Vantage](#vangage-pro2)
+- [Red Estaciones Propias](#red-de-estaciones-meteorológicas-lora)
+
 ## Vangage PRO2
 
 Estación meteorológica de [**Davis Instruments**](https://www.davisinstruments.com/), empresa líder mundial en el desarrollo y fabricación de sistemas, sensores y equipos para la monitorización meteorológica. 
@@ -50,8 +53,16 @@ Los datos se descargan en un archivo *.csv* y se puede abrir con *excel*, las co
 La primera o segunda fila del archivo indica los nombres de las columnas y las unidades de los datos.
 
 Para una correcta visualización al abrir el archivo es importante:
- - Delimitar las columnas únicamente por coma ","
+ - Delimitar las columnas únicamente por coma ","; *por defecto está delimitado así para excel*
  - Una vez estrucurado el archivo en excel, si los números no son operables, es necesario cambiar los puntos "." por coma ","
+
+![View data excel](/imgs/dataexcel.gif)
+
+______
+
+## Red de Estaciones Meteorológicas LoRa
+
+En desarrollo...
 
 ______
 ## InfoConfig
