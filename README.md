@@ -6,13 +6,15 @@ Estaciones meteorológicas con enlace de radio + almacenamiento en base de datos
 
 Estación meteorológica de [**Davis Instruments**](https://www.davisinstruments.com/), empresa líder mundial en el desarrollo y fabricación de sistemas, sensores y equipos para la monitorización meteorológica. 
 
+<img alt="Vantage PRO2" src="https://raw.githubusercontent.com/ElectronicaYopal/WeatherStationsUniSanGil/main/imgs/Vantage.jpg" width=30% height=30%>
+
 ### Descripción
 
 La estación cuenta con:
 - sensor de humedad y temperatura
-- radiación solar
-- velocidad y dirección de viento
-- pluviómetro de doble cubeta basculante
+- sensor de radiación solar
+- sensor velocidad y dirección de viento
+- sensor pluviómetro de doble cubeta basculante
 - panel solar y batería
 - transmisor de radio
 - receptor de radio y datalogger
@@ -22,8 +24,18 @@ Se encuentra ubicada en Campus Unisangil,Yopal a 374 metros sobre el nivel del m
 
 El receptor de radio cuenta con datalogger y este a su vez está conectado vía USB a un servidor local.
 
-![Vantage PRO2](/imgs/Vantage.jpg)
+### Acceso a los datos de la estación
 
+Para acceder a visualizar los datos de la estación ingresar al siguiente enlace: https://electronicayopal.github.io/Servicios/
+
+| Usuario | Contraseña |
+| --- | --- |
+| accesopublico | unisangil |
+
+### Descargar datos
+
+
+______
 ## InfoConfig
 
 1. [MariaDB](/MariaDB.md)
