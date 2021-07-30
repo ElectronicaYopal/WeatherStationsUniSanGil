@@ -16,3 +16,10 @@ sudo dpkg -i grafana_8.0.6_amd64.deb
 
 Una vez instalado el aplicativo es accesible localmente en el puerto 3000: http://localhost:3000
 
+Por defecto
+usuario: *admin*
+password: *admin*
+
+### Información adicional
+
+Puede encontrar mayor información en el siguiente enlace: https://grafana.com/docs/grafana/latest/
