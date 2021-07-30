@@ -23,3 +23,4 @@ sudo mariadb
 CREATE USER 'weewx'@'localhost' IDENTIFIED BY 'weewx';
 GRANT select, update, create, delete, insert, alter, drop ON weewx.* TO weewx@localhost;
 ```
+para salidr de MariaDB digite: *exit* y presione [Enter]
