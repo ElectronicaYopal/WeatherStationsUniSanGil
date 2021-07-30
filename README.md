@@ -60,6 +60,7 @@ Para una correcta visualización al abrir el archivo es importante:
 
 ![View data excel](/imgs/dataexcel.gif)
 
+*Para abrir el cuadro de busqueda y reemplazar presione:* [Ctrl]+[B]
 ______
 
 ## Red de Estaciones Meteorológicas LoRa
