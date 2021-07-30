@@ -15,6 +15,8 @@ http://localhost:3000
 4. Aparecerá un formulario con campos por rellenar, diligenciar segun la base de datos.
 5. Hacer clic en **[Save & test]**, debe salir un mensaje: *Database Connection OK*
 
+![add database mysql](/imgs/addDB.gif)
+
 ## Crear un dashboard
 
 1. Panel lateral izquierdo > icono Create > Dashboard o http://localhost:3000/dashboard/new
@@ -26,11 +28,17 @@ http://localhost:3000
 7. Los datos se pueden ajustar dentro del mismo query o mediante una expresión matemática.
 8. Finalmente en la parte superior derecha presionar en **[Apply]** y en el dashboard **[Save dashboard]**.
 
+![panels dashboard1](/imgs/dash1.gif)
+![panels dashboard2](/imgs/dash2.gif)
+![panels dashboard3](/imgs/dash3.gif)
+
 ## Crear un usuario cliente
 
 1. Panel lateral izquierdo > icono Server Admin > Users o http://localhost:3000/admin/users
 2. Presionar en **[New user]** y diligenciar los datos del formulario, *(El correo que se pide no tiene porqué ser real)*.
-3. Al dar **[Create user]** se creará un usiario que por defecto es cliente.
+3. Al dar **[Create user]** se creará un usuario que por defecto es cliente.
+
+![add user](/imgs/user.gif)
 
 ## Crear un Team
 El team tiene la finalidad de compatir los dashboards creados con los usuarios cliente.
@@ -42,3 +50,4 @@ El team tiene la finalidad de compatir los dashboards creados con los usuarios c
 5. Por tanto si se desea mostar una estación en específico, hacer clic en Settings, bajar y buscar **Preferences** y en Home Dashboard, elegir el deseado.
 6. Finalmente guardar.
 
+![add team](/imgs/team.gif)
