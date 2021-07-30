@@ -12,8 +12,14 @@ sudo apt install mariadb-server
 sudo mysql_secure_installation
 ```
 
-## Ejecución
+## Añadir usuario a base de datos
 
+- Ingresar a MariaDB
 ```bash
 sudo mariadb
+```
+- Dentro crear usuario y garantizar sus permisos
+```bash
+CREATE USER 'weewx'@'localhost' IDENTIFIED BY 'weewx';
+GRANT select, update, create, delete, insert, alter, drop ON weewx.* TO weewx@localhost;
 ```
