@@ -73,3 +73,4 @@ ______
 1. [MariaDB](/MariaDB.md)
 2. [WeeWX](/weewx.md)
 3. [Grafana](/Grafana.md)
+4. [Dashboard](/configdashboard.md)
