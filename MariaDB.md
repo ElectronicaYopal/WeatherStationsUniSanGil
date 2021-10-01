@@ -20,7 +20,7 @@ sudo mariadb
 ```
 - Dentro crear usuario y garantizar sus permisos
 ```bash
-CREATE USER 'weewx'@'localhost' IDENTIFIED BY 'weewx';
-GRANT select, update, create, delete, insert, alter, drop ON weewx.* TO weewx@localhost;
+CREATE USER '{{user}}>'@'localhost' IDENTIFIED BY '{{pass}}';
+GRANT select, update, create, delete, insert, alter, drop ON {{database}}.* TO {{user}}@localhost;
 ```
 para salidr de MariaDB digite: *exit* y presione [Enter]
