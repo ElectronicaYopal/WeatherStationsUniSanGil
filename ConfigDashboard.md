@@ -15,8 +15,6 @@ http://localhost:3000
 4. Aparecerá un formulario con campos por rellenar, diligenciar segun la base de datos.
 5. Hacer clic en **[Save & test]**, debe salir un mensaje: *Database Connection OK*
 
-![add database mysql](/imgs/addDB.gif)
-
 ## Crear un dashboard
 
 1. Panel lateral izquierdo > icono Create > Dashboard o http://localhost:3000/dashboard/new
