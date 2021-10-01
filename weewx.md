@@ -62,9 +62,9 @@ Más abajo en **[DatabaseTypes]** , aprox línea #621, buscar **[[MySQL]]**, en 
 632         # The host where the database is located
 633         host = localhost
 634         # The user name for logging in to the host
-635         user = weewx
+635         user = {{user}}
 636         # The password for the user name (quotes guard against parsing errors)
-637         password = weewx
+637         password = {{pass}}
 ...
 ```
 - Guardar los cambios y salir.
