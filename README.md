@@ -37,13 +37,8 @@ Y hacer clic en la opción: :ballot_box_with_check: **Estación Meteorológica U
 
 **Nota:** *Para compatir el enlace, únicamente usar el indicado previamente* :point_up:
 
-Al hacer clic cargará el aplicativo web Grafana, para ingresar digite los siguientes datos:
-
-| Usuario | Contraseña |
-| --- | --- |
-| accesopublico | unisangil |
-
 ![View dashboard](/imgs/viewgrafana.gif)
+*- Inicio de sesión no requerido.*
 
 ### Descargar datos
 
